@@ -1,0 +1,33 @@
+nav {
+	width:100%;
+	position: relative;
+	top: 0;
+	overflow: hidden;
+	background: var(--primary);
+}
+
+nav > .itemHolder {
+	width:90%;
+	margin: 0 auto;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav > .itemHolder > ul {
+	margin:0px 1rem;
+}
+
+nav li {
+	list-style: none;
+}
+
+nav > .itemHolder > ul > li, .inline-block {
+	display: inline-block;
+}
+
+nav > .itemHolder > ul > li > a {
+	padding: 1.5rem;
+	display: block;
+}
