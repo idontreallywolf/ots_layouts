@@ -40,21 +40,25 @@ a:hover {
 
 .container {
 	float:left;
-	width: 65%;
+	width: 645px;
 	min-height:500px;
 }
 
-.well {
-	width: 30%;
+.main_container, .container, .well {
+	padding: 1rem;
+}
+.well_container {
+	width: 300px;
 	float:right;
+}
+.well {
+	width: auto;
 	min-height: 200px;
 }
-.inner_container {
+.inner_container { min-height: 100px; margin-bottom: 1rem;}
 
-}
-
-.container,.well,.inner_container, nav {
+.container, .well, .inner_container, nav {
 	background: var(--primary);
 	border:1px solid var(--border-color);
-	box-shadow: 0 0 8px var(--box-shadow);
 }
+.container,.well { box-shadow: 0 0 8px var(--box-shadow); }
