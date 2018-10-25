@@ -3,6 +3,7 @@ body {
 	padding: 0;
 	margin: 0;
 	background: var(--secondary);
+	overflow-x:hidden; 
 }
 
 * {
