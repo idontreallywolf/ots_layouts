@@ -48,6 +48,9 @@
 			"Items" 			=> array("shopoffer", 	"isNew" => false, "isPage" => true)
 		)
 	);
+
+
+	$countDown = "Jan 5, 2019 15:37:25";
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -61,6 +64,12 @@
 
 		<!-- JavaScript(s) -->
 		<script src="./js/jq331.js" charset="utf-8"></script>
+		<script src="./js/countdown.js" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				countDown("countDownTimer", $("#countDownTimer").data("date"));
+			});
+		</script>
 	</head>
 	<body>
 		<!-- Blurry Background -->
@@ -75,7 +84,7 @@
 			</header>
 
 			<!-- COUNTDOWN TIMER SECTION -->
-			<div class="alert-box alert-info alert-size3">Server starts in 00:00:00</div>
+			<div id="countDownTimer" data-date="<?=$countDown?>" class="alert-box alert-info alert-size3"></div>
 			<!-- COUNTDOWN TIMER SECTION END -->
 			<!--
 				LEFT div contains all of the categories as menu items
