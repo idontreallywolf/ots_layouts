@@ -16,8 +16,30 @@
 	--anchor-default:#008de6;
 	--anchor-hover:#006db1;
 
+	/* header */
 	--header:#565656;
 	--header-bg:#fcfcfc;
+	--header-border:#c5c5c5;
+
+	/* info, success, warning, danger */
+	--bg-info:#e9f5ff;
+	--color-info:#025d9f;
+	--border-info:#9ed6ff;
+
+	--bg-success:#e9fff1;
+	--color-success:#029f1a;
+	--border-success:#a4ff9e;
+
+	--bg-warning:#fffce9;
+	--color-warning:#9f7c02;
+	--border-warning:#ffe69e;
+
+	--bg-danger:#ffe9e9;
+	--color-danger:#9f0202;
+	--border-danger:#ffbebe;
+
+	/* menuitem */
+	--menuitem-border:#f2f2f2;
 }
 
 
@@ -27,12 +49,12 @@ body {
 }
 
 footer {
-	border: 1px solid #ddd;
+	border: 1px solid var(--third);
 	overflow: hidden;
 }
 header {
 	height: 250px;
-	border: 1px solid #c5c5c5;
+	border: 1px solid var(--header-border);
 	margin-bottom: 1rem;
 
 	background: url("../img/bg.png");
@@ -45,31 +67,31 @@ header {
 	font-size: 14px;
 	border-radius: 5px;
 	padding: 5px;
-	border: 1px solid #ddd;
+	border: 1px solid var(--third);
 	margin: 0 auto;
 	margin-bottom: 15px;
 	text-align: center;
 }
 
 .alert-info {
-	background: #e9f5ff;
-	color: #025d9f;
-	border-color: #9ed6ff;
+	background: var(--bg-info);
+	color: var(--color-info);
+	border-color: var(--border-info);
 }
 .alert-success {
-    background: #e9fff1;
-    color: #029f1a;
-    border-color: #a4ff9e;
+    background: var(--bg-success);
+    color: var(--color-success);
+    border-color: var(--border-success);
 }
 .alert-warning {
-	background: #fffce9;
-	color: #9f7c02;
-	border-color: #ffe69e;
+	background: var(--bg-warning);
+	color: var(--color-warning);
+	border-color: var(--border-warning);
 }
 .alert-danger {
-	background: #ffe9e9;
-	color: #9f0202;
-	border-color: #ff9e9e;
+	background: var(--bg-danger);
+	color: var(--color-danger);
+	border-color: var(--border-danger);
 }
 .alert-collapse {display:inline-block;}
 .alert-size1 { font-size: 12px; }
@@ -82,7 +104,7 @@ header {
 	height: 100px;
 	margin:4.5rem auto;
 	font-size: 6rem;
-	color: #fff;
+	color: var(--primary);
 	text-shadow: 0 0 3px #474b04;
 	text-align: center;
 }
@@ -163,7 +185,7 @@ a:hover {
 .well_body li > a {
 	display: inherit;
 	padding: 10px;
-	border-bottom: 1px solid #f2f2f2;
+	border-bottom: 1px solid var(--menuitem-border);
 
 }
 .menuItemTxt {
@@ -182,8 +204,8 @@ span.new {
 	border: 1px solid;
 	border-radius: 5px;
 	font-size: 12px;
-	background: #0078ff;
-	color: #fff;
+	background: var(--bg-info);
+	color: var(--color-info);
 
 }
 
@@ -217,7 +239,7 @@ span.new {
 
 .socialMedia > a > div {
     display: inline-block;
-    border: 1px solid #ddd;
+    border: 1px solid var(--third);
     width: 32px;
     height: 32px;
     font-size: 32px;
