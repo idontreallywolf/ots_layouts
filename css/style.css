@@ -189,13 +189,8 @@ a:hover {
 
 }
 .menuItemTxt {
-
     max-width: 150px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
     float: left;
-
 }
 span.new {
 	padding: 1px 4px;
@@ -299,4 +294,9 @@ blockquote {
 
 .centralize {
 	text-align: center;
+}
+.ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }

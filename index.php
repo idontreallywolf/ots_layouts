@@ -140,7 +140,7 @@
 							<?php  foreach($items as $item => $link){ ?>
 								<li>
 									<a href="<?=($link["isPage"] === true ? '/ots/?subtopic=':'')?><?=$link[0]?>">
-										<div class="menuItemTxt">
+										<div class="menuItemTxt ellipsis">
 											<?=$item?>
 										</div>
 										<?=($link["isNew"] == true ? "<span class=\"new\">NEW!</span>":"")?>
