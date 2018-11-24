@@ -295,6 +295,25 @@ blockquote {
 .centralize {
 	text-align: center;
 }
+
+.guild_holder {
+	width: 128px;
+	display: inline-block;
+}
+
+.guild_name, .guild_kills {
+	text-align: center;
+}
+
+.guild_name {
+	max-width: 128px;
+}
+
+.guild_logo img {
+	width: 128px;
+	height: 128px;
+}
+
 .ellipsis {
 	overflow: hidden;
 	text-overflow: ellipsis;

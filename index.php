@@ -207,7 +207,7 @@
 
 				<!-- FOOTER -->
 				<footer>
-					<div style="width:300px;" class="pull-left">
+					<div class="pull-left">
 						Designed By <a href="https://otland.net/members/snavy.155163/" target="_blank">BlackWolf (Snavy)</a> 24-11-'18
 					</div>
 				</footer>
