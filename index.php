@@ -160,32 +160,27 @@
 					<div class="header"><span class="fa fa-users"></span> Top 5 Guilds <span class="fa fa-users"></span> </div>
 					<div class="well_body">
 						<center>
-						<table style="text-align:center;display:inline-block;">
-							<tr><td><img src="./img/guild_default.jpg" width="64" height="64" alt=""></td></tr>
-							<tr><td>GName1</td></tr>
-							<tr><td>50 Kills</td></tr>
-						</table>
-						<table style="text-align:center;display:inline-block;">
-							<tr><td><img src="./img/guild_default.jpg" width="64" height="64" alt=""></td></tr>
-							<tr><td>GName1</td></tr>
-							<tr><td>50 Kills</td></tr>
-						</table>
-						<table style="text-align:center;display:inline-block;">
-							<tr><td><img src="./img/guild_default.jpg" width="64" height="64" alt=""></td></tr>
-							<tr><td>GName1</td></tr>
-							<tr><td>50 Kills</td></tr>
-						</table>
-						<table style="text-align:center;display:inline-block;">
-							<tr><td><img src="./img/guild_default.jpg" width="64" height="64" alt=""></td></tr>
-							<tr><td>GName1</td></tr>
-							<tr><td>50 Kills</td></tr>
-						</table>
-						<table style="text-align:center;display:inline-block;">
-							<tr><td><img src="./img/guild_default.jpg" width="64" height="64" alt=""></td></tr>
-							<tr><td>GName1</td></tr>
-							<tr><td>50 Kills</td></tr>
-						</table>
-					</center>
+							<div class="guild_holder">
+								<div class="guild_name ellipsis"> Guild Name</div>
+								<div class="guild_logo"><img src="./img/guild_default.jpg"> </div>
+								<div class="guild_kills">50 Kills</div>
+							</div>
+							<div class="guild_holder">
+								<div class="guild_name ellipsis"> Guild Name</div>
+								<div class="guild_logo"><img src="./img/guild_default.jpg"> </div>
+								<div class="guild_kills">50 Kills</div>
+							</div>
+							<div class="guild_holder">
+								<div class="guild_name ellipsis"> Guild Name</div>
+								<div class="guild_logo"><img src="./img/guild_default.jpg"> </div>
+								<div class="guild_kills">50 Kills</div>
+							</div>
+							<div class="guild_holder">
+								<div class="guild_name ellipsis"> Guild Name</div>
+								<div class="guild_logo"><img src="./img/guild_default.jpg"> </div>
+								<div class="guild_kills">50 Kills</div>
+							</div>
+						</center>
 					</div>
 				</div>
 
