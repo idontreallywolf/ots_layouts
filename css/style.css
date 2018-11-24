@@ -296,3 +296,7 @@ blockquote {
 	height: 1px;
 	margin: 5px 0px;
 }
+
+.centralize {
+	text-align: center;
+}

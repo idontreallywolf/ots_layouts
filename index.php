@@ -121,6 +121,14 @@
 							</button>
 						</form>
 					</div>
+					<div class="divider"></div>
+					<div class="well_body">
+						<div class="socialMedia centralize">
+							<a href="<?=$follow["twitter"]?>" target="_blank"><div><i class="fa fa-twitter"></i></div></a>
+							<a href="<?=$follow["facebook"]?>" target="_blank"><div><i class="fa fa-facebook"></i></div></a>
+							<a href="<?=$follow["youtube"]?>" target="_blank"><div><i class="fa fa-youtube"></i></div></a>
+						</div>
+					</div>
 				</div>
 
 
@@ -205,12 +213,7 @@
 				<!-- FOOTER -->
 				<footer>
 					<div style="width:300px;" class="pull-left">
-						Designed By <a href="http://www.facebook.com/idont.reallywolf.1" target="_blank">BlackWolf</a> 24-11-'18
-					</div><br><br>
-					<div class="socialMedia pull-left">
-						<a href="<?=$follow["twitter"]?>"><div><i class="fa fa-twitter"></i></div></a>
-						<a href="<?=$follow["facebook"]?>"><div><i class="fa fa-facebook"></i></div></a>
-						<a href="<?=$follow["youtube"]?>"><div><i class="fa fa-youtube"></i></div></a>
+						Designed By <a href="https://otland.net/members/snavy.155163/" target="_blank">BlackWolf (Snavy)</a> 24-11-'18
 					</div>
 				</footer>
 			</div> <!-- FEED(right) container END-->
