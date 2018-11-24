@@ -98,8 +98,8 @@
 					<div class="well_body">
 
 						<form class="loginForm" action="index.html" method="post">
-							<input type="text" name="accountLogin" placeholder="•••••••">
-							<input type="text" name="passwordLogin" placeholder="••••••••">
+							<input type="password" name="accountLogin" placeholder="•••••••">
+							<input type="password" name="passwordLogin" placeholder="••••••••">
 							<button type="submit" class="btn btn-success">
     								<i class="fa fa-lock fa-2x"></i>
 							</button>
