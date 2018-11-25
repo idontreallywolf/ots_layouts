@@ -86,7 +86,7 @@
 		<div class="main">
 			<header>
 				<div class="logo">
-					Fapia OTS V-xx.yy
+					ServerLOGO V-xx.yy
 				</div>
 			</header>
 
