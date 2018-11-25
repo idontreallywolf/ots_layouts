@@ -1,0 +1,51 @@
+.buttonLogin, .buttonSearch {
+
+    width: 100%;
+    height: 30px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #092159;
+    background: #00499c;
+    color: #fff;
+
+}
+
+.buttonLogin:hover {
+	background: #0f5fba;
+}
+
+.btn-default {
+	background: var(--bg-default);
+	color: var(--color-default);
+	border-color:var(--border-default) !important;
+}
+
+.btn-info {
+	background: var(--bg-info);
+	color: var(--color-info);
+	border-color:var(--border-info) !important;
+}
+
+.btn-success {
+	background: var(--bg-success);
+	color: var(--color-success);
+	border-color:var(--border-success) !important;
+}
+
+.btn-warning {
+	background: var(--bg-warning);
+	color: var(--color-warning);
+	border-color:var(--border-warning) !important;
+}
+
+.btn-danger {
+	background: var(--bg-danger);
+	color: var(--color-danger);
+	border-color:var(--border-danger) !important;
+}
+
+.btn-default:hover 	{ background: var(--hover-default); }
+.btn-info:hover 	{ background: var(--hover-info); 	 }
+.btn-success:hover 	{ background: var(--hover-success); }
+.btn-danger:hover 	{ background: var(--hover-danger);  }
+.btn-warning:hover 	{ background: var(--hover-warning); }

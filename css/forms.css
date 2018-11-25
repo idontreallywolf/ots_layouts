@@ -1,0 +1,18 @@
+.main .leftPane form.loginForm {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+input:not([type='submit']) {
+    width: 100%;
+    margin-bottom: 5px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid var(--border-dark);
+    background: var(--secondary-dark);
+    padding: 5px;
+    font-size: 1em;
+    color: #b3b3b3;
+}
+
+input:not([type='submit']):hover {background: rgb(35, 49, 65);}
