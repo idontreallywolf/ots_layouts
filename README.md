@@ -1,4 +1,4 @@
-# Modern Layout - OTS Template
+# whiteWolf Layout - OTS Template
 
 # Preview
 ![whiteWolf_layout](https://github.com/idontreallywolf/ots_layouts/blob/whiteWolf/img/prev1.png)
