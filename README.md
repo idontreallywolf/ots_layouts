@@ -1,4 +1,5 @@
 # Modern Layout - OTS Template
 
 # Preview
-![modern layout preview](https://github.com/idontreallywolf/ots_layouts/blob/modern_layout/img/preview.png)
+![atomio layout preview](https://github.com/idontreallywolf/ots_layouts/blob/atomio_layout/img/prev1.png)
+![atomio layout preview](https://github.com/idontreallywolf/ots_layouts/blob/atomio_layout/img/prev2.png)
