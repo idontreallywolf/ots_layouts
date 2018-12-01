@@ -15,17 +15,20 @@
 	*/
 	$menu_items = array(
 		"Main" => array(
+			"fontIcon" 		=> "home",
 			"Latest News" 		=> array("latestnews", 	"isNew" => false, 	"isPage" => true),
 			"News Archive" 	=> array("newsarchive", 	"isNew" => false, 	"isPage" => true),
-			"Report Bug(s)"	=> array("reportbug", 	"isNew" => false, 	"isPage" => true)
+			"Report Bug(s)"	=> array("reportbug", 	"isNew" => true, 	"isPage" => true)
 		),
 		"Account" => array(
+			"fontIcon"		=> "user-circle",
 			"My Account" 		=> array("accountmanagement", "isNew" => false, "isPage" => true),
 			"Create Account"	=> array("createaccount", 	"isNew" => false, "isPage" => true),
 			"Downloads" 		=> array("downloads", 		"isNew" => false, "isPage" => true),
 			"Recover Password"	=> array("loastaccount", 	"isNew" => true, "isPage" => true)
 		),
 		"Community" => array(
+			"fontIcon"		=> "users",
 			"Characters" 		=> array("characters", 		"isNew" => false, "isPage" => true),
 			"Who is online" 	=> array("whoisonline", 		"isNew" => false, "isPage" => true),
 			"Highscores" 		=> array("highscores", 		"isNew" => false, "isPage" => true),
@@ -34,15 +37,18 @@
 			"Guilds"			=> array("guilds", 			"isNew" => false, "isPage" => true)
 		),
 		"Library" => array(
+			"fontIcon"		=> "book",
 			"Server Rules" 	=> array("tibiarules", 		"isNew" => false, "isPage" => true),
 			"Server Info" 		=> array("serverinfo", 		"isNew" => false, "isPage" => true),
 			"Exp Table" 		=> array("experiencetable", 	"isNew" => true, "isPage" => true)
 		),
 		"Support" => array(
+			"fontIcon"		=> "info-circle",
 			"Team"			=> array("team", 	"isNew" => false, "isPage" => true),
 			"testDLFILE"		=> array("file.txt", "isNew" => true, "isPage" => false)
 		),
 		"Shop" => array(
+			"fontIcon"		=> "shopping-cart",
 			"Donate"			=> array("donate", 		"isNew" => true, "isPage" => true),
 			"Buy Points" 		=> array("buypoints", 	"isNew" => false, "isPage" => true),
 			"Items" 			=> array("shopoffer", 	"isNew" => false, "isPage" => true)
@@ -79,141 +85,130 @@
 		</script>
 	</head>
 	<body>
-		<!-- Blurry Background -->
-		<div class="backblur"></div>
-
+		<header>
+			<div class="logo">
+				OTServer xx.yy
+			</div>
+		</header>
 		<!-- Main container -->
 		<div class="main">
-			<header>
-				<div class="logo">
-					ServerLOGO V-xx.yy
-				</div>
-			</header>
-
-			<!-- COUNTDOWN TIMER SECTION -->
-			<div id="countDownTimer" data-date="<?=$countDown?>" class="alert-box alert-info alert-size3"></div>
-			<!-- COUNTDOWN TIMER SECTION END -->
-			<!--
-				LEFT div contains all of the categories as menu items
-				do not touch unless you know what you're doing!
-			-->
-
-			<div class="left"> <!-- LEFT PANE -->
-				<div class="well">
-					<div class="header"></div>
-					<div class="well_body">
-
-						<form class="searchForm" action="index.html" method="post">
-							<input type="text" name="player_name" placeholder="Search player ... ">
-							<button type="submit" class="btn btn-success">
-    								<i class="fa fa-search fa-2x"></i>
-							</button>
-						</form>
-					</div>
-					<div class="divider"></div>
-					<div class="well_body">
-
-						<form class="loginForm" action="index.html" method="post">
-							<input type="password" name="accountLogin" placeholder="•••••••">
-							<input type="password" name="passwordLogin" placeholder="••••••••">
-							<button type="submit" class="btn btn-success">
-    								<i class="fa fa-lock fa-2x"></i>
-							</button>
-						</form>
-					</div>
-					<div class="divider"></div>
-					<div class="well_body">
-						<div class="socialMedia centralize">
-							<a href="<?=$follow["twitter"]?>" target="_blank"><div><i class="fa fa-twitter"></i></div></a>
-							<a href="<?=$follow["facebook"]?>" target="_blank"><div><i class="fa fa-facebook"></i></div></a>
-							<a href="<?=$follow["youtube"]?>" target="_blank"><div><i class="fa fa-youtube"></i></div></a>
-						</div>
-					</div>
-				</div>
-
-
-				<?php foreach($menu_items as $category => $items){ ?>
-				<div class="well">
-					<div class="header"> <?=$category?> </div>
-					<div class="well_body">
+			<nav>
+				<div class="container">
+					<div class="pull-right">
 						<ul>
-							<?php  foreach($items as $item => $link){ ?>
-								<li>
-									<a href="<?=($link["isPage"] === true ? '/ots/?subtopic=':'')?><?=$link[0]?>">
-										<div class="menuItemTxt ellipsis">
-											<?=$item?>
-										</div>
-										<?=($link["isNew"] == true ? "<span class=\"new\">NEW!</span>":"")?>
-									</a>
-								</li>
-							<?php  }  ?>
+							<li><a href="#test">Login</a>
+								<ul>
+									<div class="loginForm">
+										<form id="loginForm" action="/?subtopic=accountmanagement" method="post">
+											<input type="password" name="accountLogin" placeholder="•••••••">
+											<input type="password" name="passwordLogin" placeholder="••••••••">
+											<button type="submit" name="submit">Login</button>
+										</form>
+									</div>
+									<!--li><a href="#test">Test</a></li-->
+								</ul>
+							</li><!--
+							--><li><a href="#Register">Register</a></li>
 						</ul>
 					</div>
 				</div>
-				<?php } ?>
-			</div> <!-- LEFT PANE END -->
+			</nav>
+			<div class="content">
+				<div class="well infoBar">
+					<span><b>Zombie Event:</b> 5h 3m 2s</span>
+					<span><b>Fire Event:</b> 2h 33m 17s</span>
+					<span><b>LMS Event:</b> 0h 5m 34s</span>
+					<span><b>Zombie Event:</b> 6h 0m 2s</span>
+				</div>
+				<div class="paneHolder">
+					<div class="well leftPane pull-left">
+						<div class="well otsadBox">
+							ADs section<br>
+							230x100
+						</div>
+						<div class="well searchBox">
+							<form class="searchForm" action="index.html" method="post">
+								<div><input type="text" name="search" placeholder="e.g: Doctor Who"></div>
+								<div><button type="submit" name="submit"><i class="fa fa-search"></i> </button></div>
+							</form>
+						</div>
+						<?php foreach($menu_items as $category => $items){ ?>
+						<div class="menuItemHolder">
+							<div class="well paneHeader"><i class="fa fa-<?=$items["fontIcon"]?>"></i> <?=$category?></div>
+							<?php foreach($items as $item => $properties) {
+									if($item == "fontIcon") continue;
+								 ?>
+							<a href="<?=($properties["isPage"] == true ? $url_param.$properties[0]:$properties[0])?>">
+								<div class="well"><i class="fa fa-circle-o"></i> <?=$properties[0]?><?=($properties["isNew"] == true ? "<span class=\"new\">NEW!</span>":"")?> </div>
+							</a>
+							<?php } ?>
+						</div>
+						<?php } ?>
 
+					</div>
+					<div class="well rightPane pull-right">
+						<div class="well">
+							<div class="well paneHeader">
+								<i class="fa fa-empire"></i> Top GUilds
+							</div>
+							<div class="topGuilds">
+								<div class="guildContainer">
+									<div class="guildName ellipsis">Guild Name</div>
+									<div class="guildImg"><img width="100" src="./img/g1.png" alt=""></div>
+									<div class="guildKills">5000 kills</div>
+								</div>
+								<div class="guildContainer">
+									<div class="guildName ellipsis">Guild Name</div>
+									<div class="guildImg"><img width="100" src="./img/g2.png" alt=""></div>
+									<div class="guildKills">5000 kills</div>
+								</div>
+								<div class="guildContainer">
+									<div class="guildName ellipsis">Guild Name</div>
+									<div class="guildImg"><img width="100" src="./img/g3.png" alt=""></div>
+									<div class="guildKills">5000 kills</div>
+								</div>
+								<div class="guildContainer">
+									<div class="guildName ellipsis">Guild Name</div>
+									<div class="guildImg"><img width="100" src="./img/g3.png" alt=""></div>
+									<div class="guildKills">5000 kills</div>
+								</div>
+								<div class="guildContainer">
+									<div class="guildName ellipsis">Guild Name</div>
+									<div class="guildImg"><img width="100" src="./img/g3.png" alt=""></div>
+									<div class="guildKills">5000 kills</div>
+								</div>
+							</div>
+						</div>
+						<div class="well feedContainer">
+							<div class="postContainer">
+								<div class="well paneHeader">header</div>
+								<div class="post">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+							</div>
+							<div class="postContainer">
+								<div class="well paneHeader">header</div>
+								<div class="post">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+							</div>
+							<div class="postContainer">
+								<div class="well paneHeader">header</div>
+								<div class="post">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+							</div>
+							<div class="postContainer">
+								<div class="well paneHeader">header</div>
+								<div class="post">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+							</div>
+						</div>
 
-			<!-- RIGHT div contains MAIN FEED. e.g: news -->
-			<div class="right">
-				<div class="well">
-					<div class="header"><span class="fa fa-users"></span> Top 5 Guilds <span class="fa fa-users"></span> </div>
-					<div class="well_body">
-						<center>
-							<div class="guild_holder">
-								<div class="guild_name ellipsis"> Guild Name</div>
-								<div class="guild_logo"><img src="./img/guild_default.jpg"> </div>
-								<div class="guild_kills">50 Kills</div>
-							</div>
-							<div class="guild_holder">
-								<div class="guild_name ellipsis"> Guild Name</div>
-								<div class="guild_logo"><img src="./img/guild_default.jpg"> </div>
-								<div class="guild_kills">50 Kills</div>
-							</div>
-							<div class="guild_holder">
-								<div class="guild_name ellipsis"> Guild Name</div>
-								<div class="guild_logo"><img src="./img/guild_default.jpg"> </div>
-								<div class="guild_kills">50 Kills</div>
-							</div>
-							<div class="guild_holder">
-								<div class="guild_name ellipsis"> Guild Name</div>
-								<div class="guild_logo"><img src="./img/guild_default.jpg"> </div>
-								<div class="guild_kills">50 Kills</div>
-							</div>
-						</center>
 					</div>
 				</div>
-
-				<!-- Post container -->
-				<div class="well">
-					<div class="header">
-						<span class="pull-left">Some News Header</span>
-						<span class="pull-right" style="width:200px">
-							<small>
-								<span class="pull-left">Jan 15 - 2018</span>
-								<span class="pull-right">Comments (0)</span>
-							</small>
-						 </span>
-					</div>
-					<div class="well_body">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-						<blockquote cite="http://www.google.com/">
-							testst
-						</blockquote>
-						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</div>
-				</div>
-				<!-- POST CONTAINER END -->
-
-				<!-- FOOTER -->
-				<footer>
-					<div class="pull-left">
-						Designed By <a href="https://otland.net/members/snavy.155163/" target="_blank">BlackWolf (Snavy)</a> 24-11-'18
-					</div>
-				</footer>
-			</div> <!-- FEED(right) container END-->
-
-
+			</div>
 		</div><!-- Main container END -->
 	</body>
 </html>
