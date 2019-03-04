@@ -12,6 +12,7 @@ hr {
 
 a {
 	text-decoration: none;
+	color: #4dadc2;
 }
 
 body, ul {
@@ -109,7 +110,8 @@ form input[type="submit"]:active,
 }
 
 .outerBox, input[type="submit"],
-.leftPane .windowBody > ul > li > a {
+.leftPane .windowBody > ul > li > a,
+table, td {
 	border-bottom-color: #2d2d2d !important;
 	border-right-color: #2d2d2d !important;
 	border-top-color: #737373 !important;
@@ -200,4 +202,12 @@ form input[type="submit"] {
 
 .centralizeContent {
 	text-align: center;
+}
+
+table, tr, td {
+	background: none !important;
+}
+
+td {
+	border:1px solid;
 }
