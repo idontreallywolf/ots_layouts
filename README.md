@@ -1,4 +1,4 @@
 # Modern Layout - OTS Template
 
 # Preview
-![modern layout preview](https://github.com/idontreallywolf/ots_layouts/blob/modern_layout/img/preview.png)
+![TibiaClient layout preview](https://raw.githubusercontent.com/idontreallywolf/ots_layouts/TibiaClient_layout/img/preview.png)
