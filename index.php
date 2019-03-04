@@ -1,3 +1,9 @@
+<!--
+	Author: Blackwolf (Snavy on otland)
+	Otland: https://otland.net/members/snavy.155163/
+	Facebook: http://www.facebook.com/idont.reallywolf.1
+	Twitter: @idontreallywolf
+-->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 	<head>
@@ -159,3 +165,9 @@
 		</div>
 	</body>
 </html>
+<!--
+	Author: Blackwolf (Snavy on otland)
+	Otland: https://otland.net/members/snavy.155163/
+	Facebook: http://www.facebook.com/idont.reallywolf.1
+	Twitter: @idontreallywolf
+-->
