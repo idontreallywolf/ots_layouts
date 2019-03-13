@@ -1,4 +1,4 @@
-# Modern Layout - OTS Template
+# WarriorElf - OTS Template
 
 # Preview
 ![warriorElf preview](https://github.com/idontreallywolf/ots_layouts/blob/warriorElf/img/prev1.png)
