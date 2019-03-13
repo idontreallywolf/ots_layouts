@@ -9,5 +9,6 @@ Each branch of this repo includes a different layout (more comming soon).
 2. [Dark](https://github.com/idontreallywolf/ots_layouts/tree/dark_layout)
 3. [WhtieWolf](https://github.com/idontreallywolf/ots_layouts/tree/whiteWolf)
 4. [AtomIO](https://github.com/idontreallywolf/ots_layouts/tree/atomio_layout)
+4.1 [AtomIO Day/Night Mode](https://github.com/idontreallywolf/ots_layouts/tree/atomio_light)
 5. [TibiaClient Layout](https://github.com/idontreallywolf/ots_layouts/tree/TibiaClient_layout)
 6. [WarriorElf Layout](https://github.com/idontreallywolf/ots_layouts/tree/warriorElf)
