@@ -1,235 +1,255 @@
-:root {
-	/* backgrounds */
-	--primary: rgb(30,33,40);
-	--secondary: rgb(25,28,33);
-	--third: #ddd;
-	--border: rgb(19,20,23);
-
-	/* text */
-	--font-color: rgb(155,162,177);
-
-	/* Links / anchors */
-	--anchor:#b39062;
-	--anchor-hover:#e79424;
-
-	/* buttons or alert boxes with different colors */
-	--bg-danger: #3c0e0e;
-	--color-danger: #9e5858;
-	--border-danger: #350505;
-
-	--bg-warning: #905c00;
-	--color-warning: #39280a;
-	--border-warning: #322001;
-
-	--bg-info: #005d90;
-	--color-info: #00263e;
-	--border-info: #022530;
-
-	--bg-success: #009039;
-	--color-success: #003f0c;
-	--border-success: #00380c;
-
-	--bg-default: #0006;
-	--color-default: #968452;
-	--border-default: #000;
-}
-
-
-
 body {
 	font-family: 'arial', sans-serif;
-	color:var(--font-color);
+	background: url('../img/bg.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-attachment: fixed;
 }
 
-
-body, ul { margin: 0; padding: 0; }
-li { list-style: none; }
-a { text-decoration: none;color:var(--anchor); }
-a:hover {color:var(--anchor-hover);}
-a:hover, button:hover, input[type="submit"]:hover { cursor: pointer; }
-* {-webkit-transition-duration: 0.2s;-moz-transition-duration: 0.2s;-o-transition-duration: 0.2s;transition-duration: 0.2s;}
-*:hover {-webkit-transition-duration: 0s;-moz-transition-duration: 0s;-o-transition-duration: 0s;transition-duration: 0s;}
-
-nav .container > div > ul > li > ul {
-	position: absolute;
-	border: 2px solid;
-	border-top:none !important;
-	border-color: var(--border);
-	width: 200px;
+body, ul {
+	margin: 0;
+	padding: 0;
 }
 
-nav { border: 10px solid var(--primary); }
-nav .container { padding-left: 10px; }
-nav .container > div > ul > li,
-.modIcon:hover > i:nth-child(2) { display: inline-block; }
-
-nav .container > div > ul > li > a { padding: 20px; }
-nav .container > div > ul > li:hover > ul,
-nav .container > div > ul > li > a,
-nav .container > div > ul > li > ul > li > a { display: block; }
-nav .container > div > ul > li > ul > li > a { padding: 10px 20px; }
-nav .container, .preventCollapse, .ellipsis { overflow: hidden; }
-
-.topPane { margin-bottom: 10px; }
-.leftPane { width: 70%; }
-.rightPane { width: 29%; }
-.searchForm { width: 200px; }
-.body { padding: 10px 0px; }
-table { width: 100%; }
-td { padding: 10px 5px; }
-.header { color: #d1a233; }
-.feedContainer { margin:2rem 0; }
-.pull-left { float:left; }
-.pull-right { float:right; }
-.well, .header { width: auto; }
-.centralizeContent { text-align: center; }
-.smedia { font-size: 2em; }
-
-.banner {
-    background: url("../img/header.png");
-    height: 240px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    margin-top: 30px;
-    border: 10px solid var(--primary);
+* {
+	-webkit-transition-duration: 0.2s;
+	-moz-transition-duration: 0.2s;
+	-o-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+}
+*:hover {
+	-webkit-transition-duration: 0s;
+	-moz-transition-duration: 0s;
+	-o-transition-duration: 0s;
+	transition-duration: 0s;
 }
 
-
-
-.searchForm input {
-    width: 100%;
-    height: 25px;
-    border: 1px solid var(--border);
-    color: var(--font-color);
-    font-size: 1em;
+a {
+	text-decoration: none;
+	color: #3e7cf8;
 }
 
-#countDownTimer {
-	line-height: 2.3;
-	padding: 0px 10px;
-	color: #5390a8;
+li {
+	list-style: none;
 }
 
+a:hover {
+	cursor: pointer;
+}
 
-.modIcon > i:nth-child(2),
-.modIcon:hover > i:nth-child(1),
-.loginContainer,
-nav .container > div > ul > li > ul {
+.nav > ul > li {
+    display: inline-block;
+}
+
+.nav > ul > li > a {
+    padding: 1em 2em;
+    display: block;
+    font-size: 1.2em;
+	color: #b9cedb;
+}
+.nav > ul > li > a:hover,
+.nav > ul > li:hover > a {
+	background: #00050933;
+}
+
+.nav > ul > li > ul {
+    position: absolute;
+    width: 250px;
+    text-align: left;
 	display: none;
 }
-
-
-
-.loginForm {
-    display: flex;
-    flex-wrap: wrap;
+.nav > ul > li:hover > ul {
+	background: #0c0c0c99;
 }
-.loginForm button:hover {
-	background: #0000004d;
-}
-.loginForm button {
-    width: 100%;
-    margin-top: 10px;
-    background: #0006;
-    color: var(--font-color);
-    height: 40px;
-    border: 1px solid var(--border);
-    font-size: 1em;
+.nav > ul > li:hover > ul {
+	display: block;
 }
 
-.loginForm input {
-	width: 100%;
-	height: 30px;
-	border: none;
-	color: #fff;
-	font-size: 1em;
-	border-bottom: 1px solid var(--border);
+.nav > ul > li > ul > li > a {
+    display: block;
+    padding: 10px;
+    color: #c1cdd2;
 }
 
+.nav > ul > li > ul > li > a {
 
-.main {
-	width: 1220px;
-	margin: 5rem auto;
-	position: relative;
-	z-index: 1;
+    display: block;
+    padding: 10px;
+    color: #c1cdd2;
+
+}
+.nav > ul > li > ul > li > a:hover {
+    background: #0000004d;
 }
 
-
-
-
-.ellipsis {
-	text-overflow: ellipsis;
-	white-space: nowrap;
-}
-
-
-
-.alert-box {
-	max-width: 500px;
-	font-size: 14px;
-	border-radius: 5px;
-	border: 1px solid var(--third);
+.pull-mid {
 	margin: 0 auto;
-	margin-bottom: 15px;
-	text-align: center;
 }
 
-.alert-default {
-	background: var(--bg-default);
-	color: var(--color-default);
-	border-color: var(--border-default);
+.mainContainer, .pull-mid {
+	width: 1200px;
 }
-.alert-info {
-	background: var(--bg-info);
-	color: var(--color-info);
-	border-color: var(--border-info);
-}
-.alert-success {
-    background: var(--bg-success);
-    color: var(--color-success);
-    border-color: var(--border-success);
-}
-.alert-warning {
-	background: var(--bg-warning);
-	color: var(--color-warning);
-	border-color: var(--border-warning);
-}
-.alert-danger {
-	background: var(--bg-danger);
-	color: var(--color-danger);
-	border-color: var(--border-danger);
-}
-.alert-collapse {display:inline-block;}
-.alert-size1 { font-size: 12px; }
-.alert-size2 { font-size: 15px; }
-.alert-size3 { font-size: 18px; }
-.alert-size4 { font-size: 20px; }
-
-
-nav .container > div > ul > li > ul > li > a:hover,
-.searchForm input, #countDownTimer, .loginForm input,
-nav, footer, table, .header, .feedContainer {
-	background: var(--primary);
+.mainContainer {
+	margin: 5em auto;
 }
 
-body, nav .container,
-nav .container > div > ul > li > ul,
-.leftPane, .rightPane, .topPane,
-tr:nth-child(2n+1) {
-	background: var(--secondary);
+.header {
+	background: url("../img/header.png");
+	height: 420px;
+	border: 5px solid #000c;
+	background-repeat: no-repeat;
 }
 
-footer, .feedContainer,
-nav .container, .topPane {
-	border-bottom: 2px solid var(--border)
-}
-
-table, .header, .well, .smedia a {
+.container {
+    border: 5px solid #000c;
+    margin-top: 5em;
+    background: #000000b3;
 	padding: 10px;
 }
 
-.searchForm input,
-.loginForm input,
-.alert-box {
+.well-bg {
+	/*background: #60626233;*/
+	background: #80808033;
+}
+
+.well-header {
+	font-size: 20px;
+}
+.well {
+    padding: 10px;
+    border: 1px solid #0f0e0e80;
+	color: #b3b3b3;
+}
+
+.preventCollapse {
+	overflow: hidden;
+}
+
+.centralizeContent {
+	text-align: center;
+}
+
+.topBar {
+	padding: 10px;
+	background: #00000080;
+}
+.topBar .btns > div {
+    display: inline-block;
+}
+
+.topBar .btns.socialMedia {
+    font-size: 20px;
+}
+
+.topBar .btns > div > a {
+	padding: 10px 20px;
+	display: block;
+	color: #e8e2cf;
+}
+
+.menuBar {
+    background: #07080999;
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.guild {
+    width: 200px;
+    border: 1px solid #404345;
+    display: inline-block;
 	padding: 5px;
+}
+
+.gName {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 5px;
+}
+
+.gName, .gKills {
+	padding: 5px 1px;
+	font-size: 18px;
+	background: #0006;
+}
+
+.gRank {
+	background: url('../img/ranks.jpg');
+    height: 140px;
+    width: 100%;
+}
+
+.gRank_1 { background-position: 0px -577px; }
+.gRank_2 { background-position: 0px -428px; }
+.gRank_3 { background-position: 0px -279px; }
+.gRank_4 { background-position: 0px -134px; }
+.gRank_5 { background-position: 0px 4px; }
+
+.leftPane {
+	width: 25%;
+}
+
+.rightPane {
+    width: 74%;
+}
+
+.top5players > table {
+	width: 100%;
+}
+
+.top5players td {
+    padding: 10px 5px;
+}
+
+.top5players tr > td:nth-child(2) {
+    max-width: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.post .title,
+.flexSpaceBetween {
+	justify-content: space-between;
+}
+
+.searchBox,
+.loginBox {
+	display: none;
+}
+
+.post .title,
+.flexSpaceBetween,
+.searchForm {
+	display: flex;
+}
+.searchForm input {
+    padding: 10px;
+    font-size: 1.5em;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.73);
+    color: white;
+    border: 1px solid #1b1b1b;
+}
+
+/* modification for Gesior2012 */
+.gesiorPage {
+	color:#fff;
+}
+td {
+    background: none !important;
+}
+tr {
+    background: none !important;
+}
+.BigButton * {
+    color: #0293fc !important;
 }

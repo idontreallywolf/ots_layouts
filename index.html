@@ -1,0 +1,223 @@
+<!--
+	Author: Blackwolf (Snavy on otland)
+	Otland: https://otland.net/members/snavy.155163/
+	Facebook: http://www.facebook.com/idont.reallywolf.1
+	Twitter: @idontreallywolf
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Title here</title>
+		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/fontawesome/css/fontawesome.css">
+		<link rel="stylesheet" href="/fontawesome/css/solid.css">
+		<link rel="stylesheet" href="/fontawesome/css/brands.css">
+		<script src="/fontawesome/js/fontawesome.js" charset="utf-8"></script>
+		<script src="/js/jq331.js" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.searchBtn').click(function(){
+					$('.searchBox').fadeToggle();
+				});
+				$('.accountBtn').click(function(){
+					$('.loginBox').fadeToggle();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="topBar">
+			<div class="pull-mid preventCollapse">
+				<div class="btns socialMedia pull-left"><!--
+				--><div class="fbBtn"><a><i class="fab fa-facebook-square"></i></a></div><!--
+				--><div class="twitterBtn"><a><i class="fab fa-twitter-square"></i></a></div><!--
+				--><div class="gplusBtn"><a><i class="fab fa-youtube-square"></i></a></div><!--
+				--><div class="steamBtn"><a><i class="fab fa-steam-square"></i></a></div><!--
+			--></div>
+				<div class="btns pull-right"><!--
+					--><div><a class="searchBtn"><i class="fas fa-search"></i></a></div><!--
+					--><div><a class="accountBtn"><i class="fas fa-user-circle"></i></a></div><!--
+			--></div>
+			</div>
+		</div>
+		<div class="menuBar">
+			<div class="pull-mid preventCollapse">
+				<div class="nav centralizeContent">
+					<ul><!--
+					--><li><a href="/?subtopic=latestnews">NEWS</a> </li><!--
+						--><li><a>ACCOUNT</a>
+							<ul>
+								<li><a href="/?subtopic=accountmanagement">My Account</a></li>
+								<li><a href="/?subtopic=createaccount">Create Account</a></li>
+								<li><a href="/?subtopic=lostaccount">Recover Password</a></li>
+								<li><a href="/?subtopic=downloads">Downloads</a></li>
+							</ul>
+						</li><!--
+						--><li><a>COMMUNITY</a>
+							<ul>
+								<li><a href="/?subtopic=characters">Characters</a></li>
+								<li><a href="/?subtopic=highscores">Highscores</a></li>
+								<li><a href="/?subtopic=whoisonline">Who is online?</a></li>
+								<li><a href="/?subtopic=guilds">Guilds</a></li>
+								<li><a href="/?subtopic=houses">Houses</a></li>
+								<li><a href="/?subtopic=guildwars">Guild Wars</a></li>
+								<li><a href="/?subtopic=killstatistics">Kill Statistics</a></li>
+								<li><a href="/?subtopic=latestdeaths">Deaths</a></li>
+								<li><a href="/?subtopic=team">Team</a></li>
+							</ul>
+						</li><!--
+						--><li><a>LIBRARY</a>
+							<ul>
+								<li><a href="/?subtopic=serverinfo">Server Info</a></li>
+								<li><a href="/?subtopic=spells">Spells</a></li>
+								<li><a href="/?subtopic=monsters">Monsters</a></li>
+							</ul>
+						</li><!--
+						--><li><a>SHOP</a>
+							<ul>
+								<li><a href="/?subtopic=buypoints">Buy Points</a></li>
+								<li><a href="/?subtopic=shopoffer">Shop</a></li>
+							</ul>
+						</li><!--
+					--></ul>
+				</div>
+			</div>
+		</div>
+		<div class="mainContainer">
+			<div class="container loginBox">
+				<form class="searchForm" action="/?subtopic=accountmanagement" method="post">
+					<input type="password" name="account_login" placeholder="accountName123">
+					<input type="password" name="password_login" placeholder="••••••••">
+					<input style="display:none;" type="submit" name="submit" value="login">
+				</form>
+			</div>
+			<div class="container searchBox">
+				<form class="searchForm" action="/?subtopic=characters" method="post">
+					<input type="text" name="name" placeholder="e.g: Wraith Sheppard">
+				</form>
+			</div>
+			<div class="header">
+				<!-- ADD LOGO ? -->
+			</div>
+			<div class="container">
+
+				<!-- TOP GUILDS -->
+				<div class="well well-bg well-header">
+					TOP 5 GUILDS
+				</div>
+				<div class="well well-bg centralizeContent">
+					<div class="guild">
+						<div class="gName">
+							Killer Niggas Weeeee asdasdas
+						</div>
+						<div class="gRank gRank_1"></div>
+						<div class="gKills">
+							12312 Kills
+						</div>
+					</div>
+					<div class="guild">
+						<div class="gName">
+							Extreme mages
+						</div>
+						<div class="gRank gRank_2"></div>
+						<div class="gKills">
+							12312 Kills
+						</div>
+					</div>
+					<div class="guild">
+						<div class="gName">
+							Relentless Plebs
+						</div>
+						<div class="gRank gRank_3"></div>
+						<div class="gKills">
+							12312 Kills
+						</div>
+					</div>
+					<div class="guild">
+						<div class="gName">
+							Tomato Toamto
+						</div>
+						<div class="gRank gRank_4"></div>
+						<div class="gKills">
+							12312 Kills
+						</div>
+					</div>
+					<div class="guild">
+						<div class="gName">
+							We Like Kebabs
+						</div>
+						<div class="gRank gRank_5"></div>
+						<div class="gKills">
+							12312 Kills
+						</div>
+					</div>
+				</div>
+				<!-- TOP GUILDS END -->
+
+			</div>
+			<div class="container preventCollapse">
+				<div class="leftPane pull-left">
+					<div class="well">
+						<div class="well well-bg well-header">
+							Top 5 Players
+						</div>
+						<div class="well top5players">
+							<table>
+								<tr><td>1</td><td>Jack Sparrow</td><td>431</td></tr>
+								<tr><td>2</td><td>Arthur The Archer</td><td>431</td></tr>
+								<tr><td>3</td><td>Kebab Eater</td><td>431</td></tr>
+								<tr><td>4</td><td>Yo Kwack</td><td>431</td></tr>
+								<tr><td>5</td><td>Lancelot Slicebone</td><td>431</td></tr>
+							</table>
+						</div>
+					</div>
+
+					<div class="well">
+						<div class="well well-bg well-header">
+							Zombie Event
+						</div>
+						<div class="well">
+							<i class="fas fa-clock"></i> 5h 2m 1s
+						</div>
+					</div>
+					<div class="well">
+						<div class="well well-bg well-header">
+							LMS Event
+						</div>
+						<div class="well">
+							<i class="fas fa-clock"></i> 3h 20m 1s
+						</div>
+					</div>
+				</div>
+				<div class="rightPane pull-right">
+					<!-- USE THIS FOR YOUR POSTS -->
+					<div class="well post">
+						<div class="well well-bg well-header">
+							<div class="title">
+								<span>This is post title</span>
+								<span><i class="fas fa-clock"></i> March 15 '19</span>
+							</div>
+						</div>
+						<div class="well">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="container">
+				<div class="well well-bg flexSpaceBetween">
+					<span>Designed By <a href="https://otland.net/members/snavy.155163/">Snavy</a></span>
+					<span>Git repo : <a href="https://github.com/idontreallywolf/ots_layouts" target="_blank">ots_layouts</a></span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<!--
+	Author: Blackwolf (Snavy on otland)
+	Otland: https://otland.net/members/snavy.155163/
+	Facebook: http://www.facebook.com/idont.reallywolf.1
+	Twitter: @idontreallywolf
+-->
