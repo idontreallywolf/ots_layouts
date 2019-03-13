@@ -77,17 +77,68 @@
 		<link rel="stylesheet" href="./css/style.css">
 		<link rel="stylesheet" href="./fontawesome/css/font-awesome.min.css">
 		<link rel="stylesheet" href="./css/resp.css">
+		<link id="themeMode" rel="stylesheet" href="">
 
 		<!-- JavaScript(s) -->
 		<script src="./js/jq331.js" charset="utf-8"></script>
 		<script src="./js/countdown.js" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
-				countDown("countDownTimer", $("#countDownTimer").data("date"));
 
+				let cssPath = "./css/";
+
+				// if there's no cookie set, use darkMode by default.
+				if(getCookie("themeMode") == ""){
+					setCookie("themeMode", "darkMode", 2);
+					$('#themeMode').attr("href", cssPath+"dark.css");
+				} else {
+					if(getCookie("themeMode") == "dayMode")
+						$('#themeMode').attr("href", cssPath+"light.css");
+					else
+						$('#themeMode').attr("href", cssPath+"dark.css");
+				}
+
+				$('.btnDayMode').click(function(){
+					setCookie("themeMode", "dayMode", 2);
+					$('#themeMode').attr("href", cssPath+"light.css");
+				});
+				$('.btnNightMode').click(function(){
+					setCookie("themeMode", "nightMode", 2);
+					$('#themeMode').attr("href", cssPath+"dark.css");
+				});
+
+				console.log(getCookie("themeMode"));
+
+
+
+				countDown("countDownTimer", $("#countDownTimer").data("date"));
 				$('.loginBtn').click(function(){
 					$('.loginContainer').fadeIn(2000);
 				});
+
+
+				function setCookie(cname, cvalue, exdays) {
+					var date = new Date();
+					date.setTime(date.getTime() + (exdays * 24 * 60 * 60 * 1000));
+					var expires = "expires="+date.toUTCString();
+					document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+				}
+
+				function getCookie(cname) {
+					var name = cname + "=";
+					var ca = document.cookie.split(';');
+					for(var i = 0; i < ca.length; i++) {
+						var c = ca[i];
+						while (c.charAt(0) == ' ') {
+							c = c.substring(1);
+						}
+						if (c.indexOf(name) == 0) {
+							return c.substring(name.length, c.length);
+						}
+					}
+					return "";
+				}
+
 			});
 		</script>
 	</head>
@@ -114,6 +165,8 @@
 						<ul>
 							<li><a class="modIcon loginBtn"><i class="fa fa-lock"></i><i class="fa fa-unlock"></i> Login</a> </li>
 							<li><a href="/?subtopic=createaccount"><i class="fa fa-key"></i> Register</a> </li>
+							<li class="dayMode"><a class="btnDayMode"><i class="fa fa-lightbulb-o"></i></a> </li>
+							<li class="nightMode"><a class="btnNightMode"><i class="fa fa-moon-o"></i></a> </li>
 						</ul>
 					</div>
 				</div>

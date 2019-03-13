@@ -1,0 +1,40 @@
+:root {
+	/* backgrounds */
+	--primary: rgb(30,33,40);
+	--secondary: rgb(25,28,33);
+	--third: #ddd;
+	--border: rgb(19,20,23);
+
+	/* text */
+	--font-color: rgb(155,162,177);
+
+	/* Links / anchors */
+	--anchor:#b39062;
+	--anchor-hover:#e79424;
+
+	/* buttons or alert boxes with different colors */
+	--bg-danger: #3c0e0e;
+	--color-danger: #9e5858;
+	--border-danger: #350505;
+
+	--bg-warning: #905c00;
+	--color-warning: #39280a;
+	--border-warning: #322001;
+
+	--bg-info: #005d90;
+	--color-info: #00263e;
+	--border-info: #022530;
+
+	--bg-success: #009039;
+	--color-success: #003f0c;
+	--border-success: #00380c;
+
+	--bg-default: #0006;
+	--color-default: #968452;
+	--border-default: #000;
+}
+
+
+.nightMode {
+	display: none !important;
+}
