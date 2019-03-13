@@ -10,3 +10,4 @@ Each branch of this repo includes a different layout (more comming soon).
 3. [WhtieWolf](https://github.com/idontreallywolf/ots_layouts/tree/whiteWolf)
 4. [AtomIO](https://github.com/idontreallywolf/ots_layouts/tree/atomio_layout)
 5. [TibiaClient Layout](https://github.com/idontreallywolf/ots_layouts/tree/TibiaClient_layout)
+6. [WarriorElf Layout](https://github.com/idontreallywolf/ots_layouts/tree/warriorElf)
