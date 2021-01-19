@@ -1,7 +1,7 @@
 # ots_layouts
 OpenTibiaServer Layouts.
 
-Each branch of this repo includes a different layout (more comming soon).
+Each branch of this repo includes a different layout ~~(more comming soon)~~.
 
 
 # Layouts
